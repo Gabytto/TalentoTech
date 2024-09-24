@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <h1>Complete la información</h1>
+    <form action="" method="post">
+      <fieldset>
+        <legend>Datos personales</legend>
+        <label for="">Nombre</label>
+        <input type="text" id="" name="" size="10" maxlength="15" required />
+        <label for="">Apellido</label>
+        <input type="text" id="" name="" size="10" maxlength="15" required />
+        <br /><br />
+        <label for="dni">DNI</label>
+        <input type="number" name="dni" id="" />
+        <label for="tramDni">N° de tramite DNI</label>
+        <input type="password" name="tramDni" id="" /> <br /><br />
+        <label for="fechaNac">Fecha de nacimiento</label>
+        <input type="date" name="fechaNac" id="" /> <br /><br />
+        <label for="estatura">Estatura</label>
+        <select name="estatura" id="">
+          <option value="baja">Baja</option>
+          <option value="media">Media</option>
+          <option value="alta">Alta</option>
+          <option value="supAlta" disabled>Super alta</option>
+        </select>
+        <br /><br />
+        <label for="correo">E-mail</label>
+        <input type="email" name="correo" id="" />
+        <label for="adjunto">Adjuntar foto</label>
+        <input type="file" name="adjunto" id="" />
+      </fieldset>
+      <br /><br />
+      <label for="comentarios">Escriba su consulta</label> <br /><br />
+      <textarea
+        name="comentarios"
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Escribe aquí tu consulta. Maximo 300 caracteres"
+      ></textarea>
+      <br /><br />
+      <label for="turno">Seleccione el horario</label>
+      <select name="turno" id="" size="2">
+        <option value="1">Mañana</option>
+        <option value="2">Tarde</option>
+        <option value="3">Vespertino</option>
+        <option value="4">Noche</option>
+      </select>
+      <br><br>
+      <label for="cp">Conocimientos previos</label>
+      <input type="checkbox" name="cp" id="" value="1">HTML
+      <input type="checkbox" name="cp" id="" value="2">CSS
+      <input type="checkbox" name="cp" id="" value="3">JS
+      <input type="checkbox" name="cp" id="" value="4">Ninguno
+      <br><br>
+      <label for="rb">Zona de Residencia</label>
+      <input type="radio" name="rb" id="" value="1">CABA
+      <input type="radio" name="rb" id="" value="2">Gran Bs. As.
+      <input type="radio" name="rb" id="" value="3">Provincia de Buenos Aires
+      <input type="radio" name="rb" id="" value="4">Interior del pais
+      <br><br>
+      <input type="checkbox" name="condiciones" id="" required>Acepto los terminos y condiciones <br><br>
+      <input type="submit" value="Enviar datos">
+      <input type="reset" value="Borrar datos">
+    </form>
+  </body>
+</html>
