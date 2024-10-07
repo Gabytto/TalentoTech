@@ -1,3 +1,4 @@
+/*########## General ##########*/
 *{
     margin: 0;
     padding: 0;
@@ -7,8 +8,55 @@
 ul, ol {
     list-style: none;
     display: flex;
-    gap: 1em;
-    justify-content: flex-end;
-    padding: 1em;
+    gap: 3em;
+
     
 }
+html{
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-color: #ffebcd;
+    
+}
+
+/*########## Header ##########*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    background-color: #fdd495da;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70vw;
+    padding: 2em;
+}
+.logo{
+    width: 30vw;
+    opacity: 0.75;
+}
+
+.logo:hover{
+    width: 30vw;
+    opacity: 100;
+    
+}
+/*########## Main ##########*/
+p{
+    color: #2647be;
+    border: 0.1em;
+    background-color: #fdd495da;
+    border-style: dashed;
+    margin: 2em;
+}
+
+article{
+    display: block;
+}
+
+
+
